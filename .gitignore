@@ -1,5 +1,6 @@
 .idea
 *.iml
+.env
 db-data
 nocodb-data
 
