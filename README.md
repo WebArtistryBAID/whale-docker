@@ -8,7 +8,7 @@ The Docker Compose configuration is intended to be run in production. For develo
 
 * Clone this repository.
 * Run `git submodule update --init --recursive`.
-* Move `.env.example` to `.env` and add your database credentials, JWT token information, and public hosting base URL accordingly.
+* Move `.env.example` to `.env` and add your database credentials, JWT secret key, public hosting base URL, and authorization secrets accordingly.
 * In the `frontend` directory, copy `.env.example` to `.env`. You should not change the contents of `.env` within the `frontend` directory.
 * Run `docker-compose up -d`.
 * You're ready to start! Create an account at `/nc/`, and add a data source with hostname `db`, database name `whale`, along with your credentials to use the dashboard.
