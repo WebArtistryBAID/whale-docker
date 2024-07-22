@@ -4,7 +4,7 @@ This is the Docker Compose configuration for the ordering system for BAID's Whal
 
 ## Get Started
 
-The Docker Compose configuration is intended to be run in production. For development, please check [WebCraftsBAID](https://github.com/WebCraftsBAID)/[**whale-backend**](https://github.com/WebCraftsBAID/whale-backend) and [WebCraftsBAID](https://github.com/WebCraftsBAID)/[**whale-frontend**](https://github.com/WebCraftsBAID/whale-frontend).
+The Docker Compose configuration is intended to be run in production. For development, please check [WebArtistryBAID](https://github.com/WebArtistryBAID)/[**whale-backend**](https://github.com/WebArtistryBAID/whale-backend) and [WebArtistryBAID](https://github.com/WebArtistryBAID)/[**whale-frontend**](https://github.com/WebArtistryBAID/whale-frontend).
 
 * Clone this repository.
 * Run `git submodule update --init --recursive`.
