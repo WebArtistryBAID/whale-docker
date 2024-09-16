@@ -39,17 +39,6 @@ services:
       - backend
     restart: always
 
-  nocodb:
-    image: nocodb/nocodb:latest
-    volumes:
-      - ./nocodb-data:/usr/app/data/
-    environment:
-      - NC_AUTH_JWT_SECRET=${JWT_SECRET_KEY}
-      - NC_DASHBOARD_URL=/nc/dashboard
-      - NC_PUBLIC_URL=${PUBLIC_URL_ROOT}/nc
-      - NUXT_PUBLIC_NC_BACKEND_URL=${PUBLIC_URL_ROOT}/nc/
-    restart: always
-
   nginx:
     image: nginx:stable-alpine
     ports:
@@ -59,10 +48,7 @@ services:
     depends_on:
       - backend
       - frontend
-      - nocodb
     restart: always
 
 volumes:
   db-data:
-  nocodb-data:
-
