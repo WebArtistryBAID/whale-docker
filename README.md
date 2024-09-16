@@ -21,7 +21,7 @@ To contribute, simply open a pull request.
 
 ```
     Whale is BAID's Whale Cafe's ordering system.
-    Copyright (C) 2024  BAID Web Dev Team
+    Copyright (C) 2024  Team WebArtistry
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
