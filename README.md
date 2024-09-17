@@ -13,6 +13,10 @@ The Docker Compose configuration is intended to be run in production. For develo
 * Run `docker-compose up -d`.
 * You're ready to start!
 
+## Caveat
+
+Unfortunately, we had to hardcode `X-Forwarded-Proto` to be `https` because of a weird production environment setup. This may cause issues on your end.
+
 ## Contribution
 
 To contribute, simply open a pull request.
