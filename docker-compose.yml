@@ -32,6 +32,8 @@ services:
       db:
         condition: service_healthy
     restart: always
+    volumes:
+      - ./uploads:/whale-backend/uploads
   
   frontend:
     build: ./frontend

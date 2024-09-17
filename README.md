@@ -15,7 +15,8 @@ The Docker Compose configuration is intended to be run in production. For develo
 
 ## Caveat
 
-Unfortunately, we had to hardcode `X-Forwarded-Proto` to be `https` because of a weird production environment setup. This may cause issues on your end.
+* Unfortunately, we had to hardcode `X-Forwarded-Proto` to be `https` because of a weird production environment setup. This may cause issues on your end.
+* There is a bug in FastAPI's `StaticFile` that causes it to repeat the app's `root_path`. This issue is compensated for in the frontend.
 
 ## Contribution
 
