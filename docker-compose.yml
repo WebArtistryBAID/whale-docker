@@ -25,9 +25,10 @@ services:
       - DATABASE_URL=mysql+pymysql://${DB_USER}:${DB_PASSWORD}@db/whale
       - API_HOST=${PUBLIC_URL_ROOT}/api
       - FRONTEND_HOST=${PUBLIC_URL_ROOT}
+      - ONELOGIN_HOST=${ONELOGIN_HOST}
       - JWT_SECRET_KEY=${JWT_SECRET_KEY}
-      - SEIUE_CLIENT_ID=${SEIUE_CLIENT_ID}
-      - SEIUE_CLIENT_SECRET=${SEIUE_CLIENT_SECRET}
+      - ONELOGIN_CLIENT_ID=${ONELOGIN_CLIENT_ID}
+      - ONELOGIN_CLIENT_SECRET=${ONELOGIN_CLIENT_SECRET}
     depends_on:
       db:
         condition: service_healthy
