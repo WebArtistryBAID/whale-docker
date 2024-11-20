@@ -9,7 +9,7 @@ The Docker Compose configuration is intended to be run in production. For develo
 * Clone this repository.
 * Run `git submodule update --init --recursive`.
 * Move `.env.example` to `.env` and add your database credentials, JWT secret key, public hosting base URL, and authorization secrets accordingly.
-* In the `frontend` directory, copy `.env.example` to `.env`. You should not change the contents of `.env` within the `frontend` directory.
+* In the `frontend` directory, copy `.env.example` to `.env`. Change `VITE_ONELOGIN_HOST` and `VITE_ONELOGIN_CLIENT_ID` accordingly, but leave other entries intact.
 * Run `docker-compose up -d`.
 * You're ready to start!
 
